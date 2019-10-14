@@ -1,0 +1,30 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title%></title>
+    <% include ./partials/head %>
+   
+</head>
+<body class="container">
+
+<header>
+    <% include ./partials/header %>
+</header>
+
+<main>
+   <main class="jumbotron">
+        <img src="<%= record.avatar_url%>" alt="GitHub Logo"  width="50px">
+        <h1><%= record.name%></h1>
+        <h1><%= record.location%></h1>
+        <h2><%= record.email%></h2>
+        <font color="blue">Fetched using API from GitHub</font>
+</main>
+
+<footer>
+    <% include ./partials/footer %>
+</footer>
+
+</body>
+</html>
