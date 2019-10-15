@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.port || 3000;
 
-const {getData, getApi} = require('./script/api');
+const {getData, getApi, getNasa} = require('./script/api');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
@@ -12,10 +12,10 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/about', (req, res)=>{
-   
     res.render('about');
 });
 
+app.get('/image',  getNasa);
 app.get('/api',  getData);
 app.get('/json', getApi);
 

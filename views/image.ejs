@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title><%= title%></title>
     <% include ./partials/head %>
+   
 </head>
 <body class="container">
 
@@ -13,10 +15,9 @@
 
 <main>
    <main class="jumbotron">
-   
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
-    <div role="complementary"> Dynamic content from GitHub and NASA</div>
+        <h1><%= date%></h1>
+        <img src="<%= record%>" alt="NASA Image of the day" width="1000px;">
+        <p><%= des%></p> 
 </main>
 
 <footer>
