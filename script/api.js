@@ -39,8 +39,8 @@ module.exports = {
           record: url
         });
     });
-}).on('error', err =>{
-    console.log('error: ' + err.message);
-});
+    }).on('error', err =>{
+      console.log('error: ' + err.message);
+    });
   }
 };
