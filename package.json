@@ -11,10 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.7.1",
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "express": "^4.17.1",
     "https": "^1.0.0",
     "node-fetch": "^2.6.0",
-    "nodemon": "^1.19.3"
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "is-npm": "^4.0.0",
+    "os": "^0.1.1"
   }
 }
