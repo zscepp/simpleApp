@@ -10,7 +10,7 @@
   "author": "zsc",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.7.1",
+    "ejs": "^3.1.7",
     "eslint": "^6.6.0",
     "express": "^4.17.1",
     "https": "^1.0.0",
